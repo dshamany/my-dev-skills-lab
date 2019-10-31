@@ -14,7 +14,7 @@ body {
 }
 
 main {
-    width: 50%;
+    width: 80%;
     margin: 10% auto;
     border: 5px solid var(--olive-green);
     padding: 30px;
