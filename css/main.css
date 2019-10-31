@@ -1,0 +1,77 @@
+:root {
+    --olive-green: #90C17F;
+    --orange: #FFA336;
+}
+
+html {
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    width: 50%;
+    margin: 10% auto;
+    border: 5px solid var(--olive-green);
+    padding: 30px;
+}
+
+#page-title {
+    text-align: center;
+    background-color: var(--olive-green);
+    padding: 20px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+input {
+    border: 3px solid var(--olive-green);
+    padding: 5px;
+    width: 80%;
+    height: 40px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+span {
+    font-size: 24px;
+}
+
+
+#skill-item {
+    color: var(--orange);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    margin: 10px auto;
+}
+
+.container {
+    margin: 30px auto;
+}
+
+.btn-danger {
+    margin-right: 10px;
+}
+
+#btnAdd {
+    margin: 0 10px;
+    border: 3px solid var(--olive-green);
+    border-radius: 0px;
+    background-color: transparent;
+    color: var(--olive-green);
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+#btnAdd:hover {
+    background-color: var(--olive-green);
+    color: white;
+}
