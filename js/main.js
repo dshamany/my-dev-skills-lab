@@ -12,9 +12,19 @@ function init() {
 
 init();
 
+function create_UUID(){
+    var dt = new Date().getTime();
+    var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+        var r = (dt + Math.random()*16)%16 | 0;
+        dt = Math.floor(dt/16);
+        return (c=='x' ? r :(r&0x3|0x8)).toString(16);
+    });
+    return uuid;
+}
+
 // JQuery version
 function createItem() {
-    let id = storage.length;
+    let id = create_UUID();
     if ($input.val() === '') return;
     let $item = $(`
         <div class="skill-item">
